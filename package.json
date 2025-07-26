@@ -1,0 +1,37 @@
+{
+  "name": "mcp-agents",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present",
+    "playground": "npm run start --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "eslint . --ext .ts,.js --fix",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check . && eslint ."
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "description": "Agent demos that leverage the OpenAI Agents JS SDK with MCP server support",
+  "dependencies": {
+    "@openai/agents": "^0.0.13",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.0.0",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4"
+  }
+}
