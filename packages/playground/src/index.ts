@@ -9,7 +9,7 @@ import { stdin as input, stdout as output } from 'node:process'
 async function main() {
   const rl = readline.createInterface({ input, output })
   console.log(
-    'Welcome to the playground! Type your question, or type "exit" to quit.',
+    'Welcome to the Pomerium agent! How can I help you?\n\nType your question, or type "exit" to quit.',
   )
   while (true) {
     const question = await rl.question('\nAsk a question: ')
