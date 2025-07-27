@@ -20,7 +20,7 @@ async function main() {
       // Clear the loading message
       process.stdout.clearLine(0)
       process.stdout.cursorTo(0)
-      console.log('\nAnswer:', result.finalOutput, '\n')
+      console.log('\n', result.finalOutput, '\n')
     } catch (err) {
       process.stdout.clearLine(0)
       process.stdout.cursorTo(0)
