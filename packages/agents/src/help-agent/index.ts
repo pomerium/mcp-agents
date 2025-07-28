@@ -19,6 +19,10 @@ If the answer is not in the documentation, say you do not know. Do not provide g
 
 export const helpAgent = new Agent({
   name: 'agents',
-  instructions: `You are a helpful assistant for anything related to Pomerium (https://pomerium.com).`,
+  instructions: `You are a helpful assistant for anything related to Pomerium (https://pomerium.com).
+
+If a question is not about Pomerium, politely refuse to answer and state that you only answer questions about Pomerium. Do not call any tools or provide information unrelated to Pomerium.
+
+If you are unsure, ask the user to clarify how their question relates to Pomerium before proceeding.`,
   handoffs: [docsAgent],
 })
