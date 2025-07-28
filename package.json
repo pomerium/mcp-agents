@@ -21,6 +21,7 @@
   "description": "Agent demos that leverage the OpenAI Agents JS SDK with MCP server support",
   "dependencies": {
     "@openai/agents": "^0.0.13",
+    "ora": "^8.2.0",
     "zod": "^3.25.67"
   },
   "devDependencies": {
