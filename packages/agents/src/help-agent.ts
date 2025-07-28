@@ -1,4 +1,5 @@
 import { Agent } from '@openai/agents'
+import { deepResearcherAgent } from './deep-researcher-agent'
 
 // create a new agent to access the pomerium documentation. There is an llms.tx =t at https://docs.pomerium.com/llms.txt
 
@@ -24,5 +25,5 @@ export const helpAgent = new Agent({
 If a question is not about Pomerium, politely refuse to answer and state that you only answer questions about Pomerium. Do not call any tools or provide information unrelated to Pomerium.
 
 If you are unsure, ask the user to clarify how their question relates to Pomerium before proceeding.`,
-  handoffs: [docsAgent],
+  handoffs: [docsAgent, deepResearcherAgent],
 })
