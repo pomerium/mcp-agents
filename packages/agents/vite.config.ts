@@ -8,7 +8,7 @@ export default defineConfig({
     target: 'es2022',
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'ExampleAgent',
+      name: 'agents',
       fileName: 'index',
       formats: ['es'],
     },
